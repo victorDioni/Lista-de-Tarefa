@@ -10,6 +10,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import dionizio.victor.listadetarefas.R;
 import dionizio.victor.listadetarefas.model.Tarefa;
 import dionizio.victor.listadetarefas.model.helper.DBHelper;
 
@@ -31,9 +32,9 @@ public class TarefaDAO implements ITarefaDAO{
 
         try{
             escreve.insert(DBHelper.TABELA_TAREFAS, null, cv);
-            Log.i("INFO", "Tarefa salva com sucesso!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_salva_sucesso));
         }catch (Exception e){
-            Log.i("INFO", "Erro ao salvar tarefa!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_salva_erro));
             return false;
         }
         return true;
@@ -47,9 +48,9 @@ public class TarefaDAO implements ITarefaDAO{
         try{
             String[] args = {tarefa.getId().toString()};
             escreve.update(DBHelper.TABELA_TAREFAS, cv, "id = ?", args);
-            Log.i("INFO", "Tarefa atualizada com sucesso!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_atualizada_sucesso));
         }catch (Exception e){
-            Log.i("INFO", "Erro ao atualizar tarefa!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_atualizada_erro));
             return false;
         }
         return true;
@@ -60,9 +61,9 @@ public class TarefaDAO implements ITarefaDAO{
         try{
             String[] args = {tarefa.getId().toString()};
             escreve.delete(DBHelper.TABELA_TAREFAS,"id = ?", args);
-            Log.i("INFO", "Tarefa deletada com sucesso!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_deletar_sucesso));
         }catch (Exception e){
-            Log.i("INFO", "Erro ao deletar tarefa!");
+            Log.i(String.valueOf(R.string.info), String.valueOf(R.string.tarefa_deletar_erro));
             return false;
         }
         return true;

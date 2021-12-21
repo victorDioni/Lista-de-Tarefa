@@ -17,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import dionizio.victor.listadetarefas.R;
 import dionizio.victor.listadetarefas.databinding.ActivityMainBinding;
 import dionizio.victor.listadetarefas.view.AdicionarTarefaActivity;
+import dionizio.victor.listadetarefas.viewmodel.TarefaViewModel;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private TarefaViewModel tarefaViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.toolbar);
+
+        tarefaViewModel.recyclerViewClick();
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override

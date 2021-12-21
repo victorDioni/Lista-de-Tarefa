@@ -14,4 +14,23 @@
 
     <string name="digite_uma_tarefa">Digite uma tarefa</string>
     <string name="estudar_android">Estudar Android</string>
+
+            <!-- TarefaDAO-->
+    <string name="tarefa_salva_sucesso">Tarefa salva com sucesso!</string>
+    <string name="tarefa_salva_erro">Erro ao salvar tarefa!</string>
+
+    <string name="tarefa_atualizada_sucesso">Tarefa atualizada com sucesso!</string>
+    <string name="tarefa_atualizada_erro">Erro ao atualizar tarefa!</string>
+
+    <string name="tarefa_deletar_sucesso">Tarefa deletada com sucesso!</string>
+    <string name="tarefa_deletar_erro">Erro ao deletar tarefa!</string>
+
+    <string name="info">INFO</string>
+
+            <!-- TarefaViewModel-->
+    <string name="confirmar_exclusao">Confirmar exclusão</string>
+    <string name="excluir_tarefa">Deseja excluir tarefa</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
 </resources>
