@@ -1,4 +1,4 @@
-package dionizio.victor.listadetarefas.adapter;
+package dionizio.victor.listadetarefas.viewmodel.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

@@ -1,6 +1,5 @@
-package dionizio.victor.listadetarefas.activity;
+package dionizio.victor.listadetarefas.view;
 
-import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,23 +7,18 @@ import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.util.Log;
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import dionizio.victor.listadetarefas.R;
-import dionizio.victor.listadetarefas.adapter.TarefaAdapter;
+import dionizio.victor.listadetarefas.viewmodel.adapter.TarefaAdapter;
 import dionizio.victor.listadetarefas.databinding.ActivityMainBinding;
-import dionizio.victor.listadetarefas.helper.DBHelper;
-import dionizio.victor.listadetarefas.helper.RecyclerItemClickListener;
-import dionizio.victor.listadetarefas.helper.TarefaDAO;
+import dionizio.victor.listadetarefas.model.helper.RecyclerItemClickListener;
+import dionizio.victor.listadetarefas.model.dao.TarefaDAO;
 import dionizio.victor.listadetarefas.model.Tarefa;
 
 import android.view.Menu;

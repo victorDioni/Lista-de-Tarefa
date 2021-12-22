@@ -1,4 +1,4 @@
-package dionizio.victor.listadetarefas.helper;
+package dionizio.victor.listadetarefas.model.helper;
 
 import android.content.Context;
 import android.database.DatabaseErrorHandler;

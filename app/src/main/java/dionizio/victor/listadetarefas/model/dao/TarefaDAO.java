@@ -1,4 +1,4 @@
-package dionizio.victor.listadetarefas.helper;
+package dionizio.victor.listadetarefas.model.dao;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -11,8 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dionizio.victor.listadetarefas.model.Tarefa;
+import dionizio.victor.listadetarefas.model.dao.ITarefaDAO;
+import dionizio.victor.listadetarefas.model.helper.DBHelper;
 
-public class TarefaDAO implements ITarefaDAO{
+public class TarefaDAO implements ITarefaDAO {
 
     private SQLiteDatabase escreve;
     private SQLiteDatabase le;
